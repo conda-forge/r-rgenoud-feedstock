@@ -1,4 +1,4 @@
-{% set version = '5.9-0.3' %}
+{% set version = "5.9-0.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rgenoud_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rgenoud/rgenoud_{{ version }}.tar.gz
-  sha256: 31560a8dad791f9c47a673e90d397b3fc60da1a58be1ae1486ace90d988eb55f
+  sha256: e644ee640a097ed2d32be03db3603259981656fa459922035a8c531d692acde9
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
